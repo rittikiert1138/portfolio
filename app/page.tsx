@@ -12,8 +12,7 @@ export default function Home() {
     "Tailwind CSS",
     "Golang",
     "Fiber",
-    "Gin",
-    "Gorm"
+    "Gin"
   ];
 
   const experiences = [
