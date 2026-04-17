@@ -1,15 +1,18 @@
 export default function Home() {
   const skills = [
+    "TypeScript",
     "React.js",
     "Next.js",
-    "TypeScript",
     "Node.js",
     "Prisma",
     "PostgreSQL",
     "MySQL",
     "Docker",
     "AWS",
-    "Tailwind CSS"
+    "Tailwind CSS",
+    "Golang",
+    "Gin",
+    "Gorm",
   ];
 
   const experiences = [
@@ -17,15 +20,25 @@ export default function Home() {
       role: "Fullstack Developer",
       company: "Thailife Insurance (Bangkok, TH)",
       period: "April 2022 - Present",
-      description:
-        "Develop and maintain scalable full-stack applications with React.js, Node.js, and TypeScript. Optimize PostgreSQL/MySQL performance and deploy containerized services to AWS ECS.",
+      description: [
+        "Develop and maintain scalable full-stack applications with React.js, Node.js, and TypeScript.",
+        "Optimize PostgreSQL/MySQL queries and database design to improve performance and stability.",
+        "Containerize services with Docker and support deployment workflows on AWS ECS.",
+        "Designed and built a dynamic form platform where Admin and BU teams can configure form elements without code for multiple company events.",
+        "Enabled non-technical users to create event-specific forms quickly through configurable form elements.",
+        "Centralized submission data by event and provided Excel export for reporting and operational follow-up.",
+      ],
     },
     {
       role: "Fullstack Developer",
       company: "Degito (Bangkok, TH)",
       period: "Nov 2018 - Mar 2022",
-      description:
-        "Built responsive web applications from UI/UX wireframes, handled full project lifecycle delivery, and collaborated across teams to continuously improve application quality.",
+      description: [
+        "Contributed to the team in building UI for the cu-book e-commerce website across both desktop and mobile experiences.",
+        "Built responsive web applications from UI/UX wireframes using modern frontend technologies.",
+        "Handled end-to-end delivery from implementation to testing and release coordination.",
+        "Collaborated with cross-functional teams to improve product quality and delivery speed.",
+      ],
     },
   ];
 
@@ -37,8 +50,8 @@ export default function Home() {
     },
     {
       label: "GitHub",
-      value: "github.com/rittikiert1138",
-      href: "https://github.com/rittikiert1138",
+      value: "github.com/rtkss",
+      href: "https://github.com/rtkss",
     },
     {
       label: "Location",
@@ -67,7 +80,6 @@ export default function Home() {
             development, cloud deployment, and database optimization. Open to
             relocating internationally.
           </p>
-       
         </section>
 
         <section id="about" className="mt-8 border-t border-slate-200 pt-8">
@@ -75,7 +87,14 @@ export default function Home() {
           <p className="mt-4 text-slate-600">
             I have over 7 years of experience building and maintaining web
             applications across insurance and software service domains, with a
-            focus on scalability, code quality.
+            focus on scalability, code quality, and long-term maintainability.
+            I enjoy designing practical solutions, improving system performance,
+            and collaborating closely with product and engineering teams.
+          </p>
+          <p className="mt-3 text-slate-600">
+            My current focus is delivering reliable full-stack systems with
+            clean architecture, efficient data access patterns, and smooth user
+            experience.
           </p>
         </section>
 
@@ -108,7 +127,11 @@ export default function Home() {
                   </div>
                   <span className="text-xs text-slate-500">{item.period}</span>
                 </div>
-                <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-600">
+                  {item.description.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
