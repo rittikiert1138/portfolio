@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Personal portfolio website built with Next.js",
+  title: "Rittikiert Sankamlang",
+  description: "Fullstack developer with hands-on experience in modern web development, cloud deployment, and database optimization. Open to relocating internationally.",
 };
 
 export default function RootLayout({
