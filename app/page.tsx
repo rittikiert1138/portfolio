@@ -9,10 +9,7 @@ export default function Home() {
     "MySQL",
     "Docker",
     "AWS",
-    "Tailwind CSS",
-    "Golang",
-    "Fiber",
-    "Gin"
+    "Tailwind CSS"
   ];
 
   const experiences = [
